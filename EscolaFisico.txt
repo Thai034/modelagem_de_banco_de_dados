@@ -7,6 +7,12 @@ create table aluno( matricula int primary key auto_increment, nome varchar(80) n
 
 create table turma (numero int primary key, turno char(1) not null, definicao varchar(60));
 
+create table estuda (idEstuda int primary key auto_increment, fk_Aluno_matricula int not null, fk_Turma_numero int not null);
+
+alter table estuda add constraint fkmat foreign key (fk_Aluno_matricula) references aluno (matricula);
+
+alter table estuda add constraint fknum foreign key (fk_Turma_numero) references turma (numero);
+
 show tables;
 
 desc aluno
@@ -24,6 +30,43 @@ show tables;
 desc aluno;
 
 insert into aluno value (null, 'Josefina Winter','1945-02-10', '123.456.78-02','Clenisbaldo Winter', null);
+
+create table possui (idPossui int primary key auto_increment, fk_Disciplina_cod_disciplina int not null, fk_Turma_numero int not null);
+
+alter table possui add constraint fkdisciplina foreign key (fk_Disciplina_cod_disciplina) references disciplina (cod_disciplina);
+
+alter table possui add constraint fknumero foreign key (fk_Turma_numero) references turma (numero);
+
+create table leciona (idLeciona int primary key auto_increment, fk_Disciplina_cod_disciplina int not null, fk_Professor_matricula int not null);
+
+alter table leciona add constraint fkcoddisciplina foreign key (fk_Disciplina_cod_disciplina) references disciplina (cod_disciplina);
+
+alter table leciona add constraint fkprofessor foreign key (fk_Professor_matricula) references professor (matricula);
+
+
+
+novo banco de dados
+
+create database estacionamento;
+
+show databases;
+
+use estacionamento
+
+create table veiculo (ideVeiculo int primary key auto_increment, fabriecante varchar(50) not null, modelo varchar(80) not null, placa char(7) not null unique);
+
+alter table veiculo rename to carro;
+
+alter table carro add cor varchar(15) not null after modelo;
+
+alter table carro modify cor char(8) not null;
+
+alter table carro change modelo nome_modelo varchar(50) not null;
+
+alter table carro drop cor;
+
+
+
 
 
 
