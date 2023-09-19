@@ -19,6 +19,8 @@ desc aluno
 
 insert into aluno values (3001, 'Godofredo Henrique', '2000-03-15', '123.456.789.01', 'Godojane Maia', 'gh@email.com');
 
+insert into aluno values (null, 'Ana Carolina','2001-07-11', '123.456.678.04', 'Maria Carolina','ac@email.com');
+
 select * from aluno;
 
 show databases;
@@ -43,39 +45,26 @@ alter table leciona add constraint fkcoddisciplina foreign key (fk_Disciplina_co
 
 alter table leciona add constraint fkprofessor foreign key (fk_Professor_matricula) references professor (matricula);
 
+insert into aluno values (null, 'Ana Carolina','2001-07-11', '123.456.678.04', 'Maria Carolina','ac@email.com');
 
+insert into aluno (matricula, nome, nascimento, cpf, responsavel, email) values (null, 'Elias Sherman', '1995-03-02', '123.456.789-05', 'Jonh Sherman', 'es@email.com');
 
-novo banco de dados
+insert into aluno (nome, cpf, responsavel) values ('Waldiney Mouse', '123.456.789-06', 'Weslwy Keyboard');
 
-create database estacionamento;
+delete from aluno where matricula = 3007; - deletar algum cadastro dentro de uma tabela
 
-show databases;
+insert into aluno (matricula, nome, nascimento, cpf, responsavel, email) values (null, 'Genivaldo Willians', null, '123.456.789-08', 'Clotilde Willians', 'gw@email.com');
+insert into turma values (2023080, 'M', 'Técnico de informática');
+insert into turma values (2023090, 'T', 'Técnico em Comunicação Visual');
 
-use estacionamento
+select * from turma;
 
-create table veiculo (ideVeiculo int primary key auto_increment, fabriecante varchar(50) not null, modelo varchar(80) not null, placa char(7) not null unique);
-
-alter table veiculo rename to carro;
-
-alter table carro add cor varchar(15) not null after modelo;
-
-alter table carro modify cor char(8) not null;
-
-alter table carro change modelo nome_modelo varchar(50) not null;
-
-alter table carro drop cor;
+insert into estuda values (7501, 3001, 2023090);
+insert into estuda values (null, 3005, 2023080);
 
 
 
-
-
-
-
-
-
-
-
-
+			
 
 
 

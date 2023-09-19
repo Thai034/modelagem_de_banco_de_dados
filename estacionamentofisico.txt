@@ -1,0 +1,31 @@
+create databases estacionamento;
+
+use estacionamento;
+
+create table veiculo (ideVeiculo int primary key auto_increment, fabriecante varchar(50) not null, modelo varchar(80) not null, placa char(7) not null unique);
+
+
+alter table veiculo rename to carro;
+alter table carro add cor varchar(15) not null after modelo;
+alter table carro modify cor char(8) not null;
+alter table carro change modelo nome_modelo varchar(50) not null;
+alter table carro drop cor;
+
+insert into carro values (101, 'VW', 'Voyage', 'ABC1234');
+insert into carro values (null, 'Fiat', 'Cronos', 'ABC1235');
+insert into carro values (null, 'Ford', 'KA', 'ABC1236');
+insert into carro values (null, 'Nissan', 'Kicks', 'ABC1237');
+insert into carro values (null, 'BMW', 'X1', 'ABC1238');
+
+update carro set nome_modelo = 'GLC coupé' where ideVeiculo = 103;
+update carro set fabriecante = 'BMW' where ideVeiculo = 103;
+update carro set nome_modelo = 'Polo', placa ='ABC1240' where ideVeiculo = 101;
+
+delete from carro where ideVeiculo = 102;
+
+select * from carro where placa = 'abc1238';
+select fabriecante, nome_modelo, placa from carro where placa = 'ABC1238';
+select placa, fabriecante, nome_modelo from carro where placa = 'abc1237';
+
+alter table carro change ideVeiculo idVeiculo int;
+alter table carro change fabriecante fabricante varchar(50);
