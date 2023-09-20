@@ -1,0 +1,36 @@
+
+
+show databases;
+use escola;
+show tables;
+
+insert into disciplina values (null, 'Lógica de programação');
+insert into professor values (null, 'Jefferdon Brandão', 'Programador de TI');
+insert into possui values (null, 4, 2023080);
+insert into leciona values (null, 4, 513);
+
+update professor set nome = 'Vicente Orsino' where matricula = 511;
+update aluno set nascimento = '2003-05-25' where matricula = 3006;
+update aluno set nascimento = '2001-07-11' where matricula = 3008;
+
+alter table professor add email varchar(50) after nome;
+
+update professor set email = 'Sergio03@email.com' where matricula = 510;
+update professor set email = 'Vcorsino@email.com' where matricula = 511;
+update professor set email = 'flavia@email.com' where matricula = 512;
+update professor set email = 'jeffb@email.com' where matricula = 513;
+
+insert into turma values (2023100, 'M', 'Técnico de Comunicação Visual');
+insert into possui values (null, 3,2023100);
+insert into aluno values (null, 'Judite Presley', '2003-06-7', '123.456.789-09', 'Angelina Presley', 'jdtply@email.com');
+insert into estuda values (null, 3009, 2023100);
+
+update disciplina set nome = 'Programação Python' where cod_disciplina = 1;
+
+
+
+
+
+
+
+

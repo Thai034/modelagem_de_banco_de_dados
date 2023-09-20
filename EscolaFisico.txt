@@ -54,6 +54,7 @@ insert into aluno (nome, cpf, responsavel) values ('Waldiney Mouse', '123.456.78
 delete from aluno where matricula = 3007; - deletar algum cadastro dentro de uma tabela
 
 insert into aluno (matricula, nome, nascimento, cpf, responsavel, email) values (null, 'Genivaldo Willians', null, '123.456.789-08', 'Clotilde Willians', 'gw@email.com');
+
 insert into turma values (2023080, 'M', 'Técnico de informática');
 insert into turma values (2023090, 'T', 'Técnico em Comunicação Visual');
 

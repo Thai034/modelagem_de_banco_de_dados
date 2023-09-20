@@ -24,8 +24,14 @@ update carro set nome_modelo = 'Polo', placa ='ABC1240' where ideVeiculo = 101;
 delete from carro where ideVeiculo = 102;
 
 select * from carro where placa = 'abc1238';
-select fabriecante, nome_modelo, placa from carro where placa = 'ABC1238';
-select placa, fabriecante, nome_modelo from carro where placa = 'abc1237';
+select fabricante, nome_modelo, placa from carro where placa = 'ABC1238';
+select placa, fabricante, nome_modelo from carro where placa = 'abc1237';
 
 alter table carro change ideVeiculo idVeiculo int;
 alter table carro change fabriecante fabricante varchar(50);
+
+
+
+
+
+
