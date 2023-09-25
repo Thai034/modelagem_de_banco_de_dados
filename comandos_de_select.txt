@@ -1,0 +1,58 @@
+					SALVANDO OS COMANDOS DE SELECT
+
+select * from [nome da tabela] - busca as informações de todas as colunas
+select * from [nome da tabela] where [nome da coluna] = '2001-07-11' - busca as informações de uma coluna específica
+select matricula, nome from aluno - apenas as colunas nome e matricula
+select matricula, nome from aluno order by nome; - colocar a coluna por ordem alfabética
+select * from aluno where matricula = 3008;
+select * from aluno where matricula < 3008;
+select * from aluno where matricula > 3005;
+select * from aluno where matricula >= 3005; 
+select * from aluno where matricula != 3005; = select * from aluno where matricula <> 3005;
+select * from aluno where matricula >= 3004 and matricula <= 3008; = select * from aluno where matricula >= 3004 && matricula <= 3008;
+select * from aluno where matricula between 3004 and 3008;
+select * from aluno where matricula in (3003, 3006, 3008);
+select * from aluno where nome like 'G%'; - achar os nomes que coemecem coma a letra G 
+select * from aluno where nome like '%e'; - terminam com a lera e
+select * from aluno where nome like '_o%'; - segunda letra o
+select * from aluno where nome like '__n%'; - terceira letra é a letra n
+select * from aluno where nome like '%a%'; - nome coma letra a em qualquer lugar
+select * from aluno where nome like '%mouse';
+select * from aluno where nome like '%mouse%';
+select * from aluno where nome like '%mouse';
+select * from aluno where nome like 'mouse%';
+select * from aluno where nome like '% mouse%';
+update professor set dependentes = 3 where matricula = 510;
+select avg(dependentes) from professor; - tirar média 
+select count(dependentes) from professor where dependentes = 3; - contar quantos alguma coisa tem
+select sum(dependentes) from professor; - soma de algo
+select max(dependentes) from professor; - mostrar o maximo
+select min(dependentes) from professor; - mostrar o minimo
+select matricula, nome, nascimento, month(nascimento) from aluno; - número do mês
+select matricula, nome, nascimento, monthname(nascimento) from aluno; - nome do mês
+select matricula, nome, nascimento, day(nascimento) from aluno; - dia do nascimento
+select concat('Nome do aluno: ', nome) from aluno;
+select concat('Nome do aluno: ', nome, ' - E-mail:', email) from aluno where email is not null;
+select concat('Nome do aluno: ', nome, ' - Nascimento:', nascimento) from aluno;
+select upper(nome) from aluno; - letras todas em maiúsculas
+select lower(nome) from aluno; - tudo em minúsculo
+
+select aluno.nome, turma.definicao, turma.turno from aluno, turma, estuda where aluno.matricula = estuda.fk_aluno_matricula and fk_turma_numero = turma.numero; 
+
+select aluno.nome, turma.definicao, turma.turno from aluno, turma, estuda where aluno.matricula = estuda.fk_aluno_matricula and fk_turma_numero = turma.numero and aluno.matricula = 3001;
+
+select aluno.nome, disciplina.nome from aluno, estuda, turma, possui, disciplina where aluno.matricula = estuda.fk_aluno_matricula and estuda.fk_turma_numero = turma.numero and turma.numero = possui.fk_turma_numero and possui.fk_disciplina_cod_disciplina = disciplina.cod_disciplina;
+
+
+
+
+
+
+________________________________________________________
+% - letra aleatória em qualquer posição 
+_ - letra aleatória em uma posição específica 
+like - usado para pesquisar coisas
+
+
+ascendente - crescente
+descendente - decrescente
