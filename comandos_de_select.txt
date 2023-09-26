@@ -45,6 +45,7 @@ select aluno.nome, disciplina.nome from aluno, estuda, turma, possui, disciplina
 
 
 
+select concat('Professor: ', nome, ' - Formação: ', formacao) from professor;
 
 
 
