@@ -2,7 +2,9 @@
 
 show databases;
 use escola;
-1- select nome, email from aluno where email is not null;
+1- select nome as 'Aluno:', email as 'E-mail:' from aluno where email is not null;
+1.2 - select nome Aluno, email Email from aluno where email is not null;
+1.3 - select nome Aluno, email 'E-mail' from aluno where email is not null;
 
 2- select nome from professor order by nome;
 
@@ -12,9 +14,10 @@ use escola;
 
 5- select disciplina.* from disciplina, possui, turma where disciplina.cod_disciplina = possui.fk_disciplina_cod_disciplina and possui.fk_turma_numero = turma.numero and turma.numero = 2023080;
 
-6- select count(definicao) from turma where definicao = 'Técnico de Informática';
+6- select count(definicao) as 'Total Turmas TI' from turma where definicao = 'Técnico de Informática';
 
 7- select nome, nascimento from aluno where nascimento like '2000%';
+7.1 - select * from aluno where nascimento like '____-03-%'; (caso ele pedisse mês)
 
 8- select nome, nascimento, monthname(nascimento) from aluno where monthname(nascimento) = 'September';
 
