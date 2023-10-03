@@ -1,0 +1,126 @@
+					ANOTAÇÃO SOBRE A MATÉRIA DE REDES
+
+
+	HARDWARE - TUDO DENTRO OU FORA DO COMPUTADOR QUE VC PODE TOCAR (FÍSICO)
+	SOFTWARE - É DIGITAL, É ARQUIVO, ALGO DO COMPUTADOR QUE VOCÊ NÃO PODE SEGURAR NA SUA MÃO (LÓGICO)
+	PEOPLEWARE - SÃO PESSOAS QUE TRABALHAM DIRETAMENTE, OU INDIRETAMENTE, COM A ÁREA DE TECNOLOGIA DA INFORMAÇÃO
+
+O QUE É INFORMÁTICA?
+   ciência que se dedica ao tratamento da informação mediante o uso de computadores e demais dispositivos de processamento de dados.
+   Chama-se generecamente de informática ao conjunto das ciências da informação.
+
+O QUE É INFORMAÇÃO?
+   É  o resultado do processamento, manipulação e organização de dados de tal forma que represente uma modificação (quantitativa ou qualitativa) no conhecimento do sistema (pessoa, animal ou máquina) que a recebe.
+
+
+			HARDWARE X SOFTWARE
+O HARDWARE é a parte física do computador 
+	é aquilo que vc pode chutar (monitor, gabinete)
+
+
+O SOFTWARE é a parte 
+	exemplos de software (pycharm, linux, minecraft, windows)
+
+
+O FIRMWARE é o conjunto de instruções operacionais programados diretamente no hardware de um equipamento eletrônico. é armazenado permanentemente num circuito integrado (chip) de mem´roia de hardware
+qualquer software armazenado sob a forma de memória de leitura, ROM, EPROM, ou ainda EEPROM e memória flash, no momento da fabricação do componente.
+
+Memória RAM? Random Access Memory (memória do acesso aleatória) Você consegue acessar sem precisar acessar as memórias ateriores que você quer
+
+Memória ROM - read only memory (Memória apensa para leitura)
+
+APLICATIVOS - CONCEITO 2
+Programa executável destinado a auxiliar o usuário na realização de determinadas tarefas num computador.
+
+UTILITÁRIOS 
+São programas utilizados para suprir deficiência dos sistemas operacionais.
+
+	EXEMPLOS DE UTILITÁRIOS
+- Antivírus
+- Desfragmentador de disco
+- Softwares gravadores de CD e DVD
+- FireWall
+- Driver
+
+(Antivírus analiza o que já está no computador e procura o vírus, FireWall analiza a rede dos compuatadores e acha o problema [escudo])
+
+
+Sistema Operacional - Conceito 1
+   Programapara o controle e coordenação de todas as operações de um computador
+
+conceito - 2
+ é o principal programa do cmputador e responsável pleo controle do equipamento em si, gerenciando o uso dos dispositivo e demais programas.
+
+conceito - 3
+ Programa que gerencia as funções básicas de um computador, armazenamento e recuperação de informações
+
+
+EXEMPLOS DE SISTEMAS OPERACIONAIS
+ Windows, Linux, freeBSD
+
+===================================================================================================================
+
+SISTEMA OPERACIONAL - Programa para o controle e coordenação de todas as operações de um computador. é o principal programa do computador e responsável pelo controle do equipamento em si, gerenciando o uso dos dispositivos e demais programas.
+
+SISTEMA DECIMAL - Base dez: 0 1 2 3 4 5 6 7 8 9 [Lógica quando acabam os digitos do meio vc volta para colocando 1 na frente, depois volta para o inicio voltando para o inicio colocando o 2]
+
+SISTEMA BINÁRIO - 0 1 (sistema utilizados pelos computadores)
+exemplo: 
+
+0 1 
+10 11
+100 101
+1000 1001
+1010 1011
+1100 1101
+1110 1111
+
+
+SISTEMA HEXADECIMAL (16 DIGITOS: 0 1 2 3 4 5 6 7 8 9 A B C D E F -ESSAS LETRAS VIRAM NÚMERO-)
+exemplo: 
+
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+...
+90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+...
+F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF
+
+
+===================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
